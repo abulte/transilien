@@ -1,0 +1,36 @@
+"""Config file"""
+
+DEBUG = True
+
+# Stations
+# Stations codes are here:
+# https://ressources.data.sncf.com/api/datasets/1.0/api-temps-reel-transilien/attachments/guide_d_utilisation_api_temps_reel_transilien_pdf/
+FROM_STATION_CODE = 87386573
+FROM_STATION_LABEL = 'Poissy'
+TO_STATION_CODE = 87384008
+TO_STATION_LABEL = 'St Lazare'
+
+# Database
+DATABASE_URI = 'sqlite:///transilien.db'
+
+# Transilien
+# Apply as explained here:
+# https://ressources.data.sncf.com/explore/dataset/api-temps-reel-transilien/
+# Limit: 20 req./min.
+TRANSILIEN_API_LOGIN = 'xxx'
+TRANSILIEN_API_PWD = 'xxx'
+
+# Pushbullet
+PUSHBULLET_ENABLED = False
+PUSHBULLET_API_KEY = 'xxx'
+PUSHBULLET_CHANNEL = 'xxx'
+
+# Mail
+MAIL_ENABLED = False
+MAIL_RECIPIENTS = ['xxx@xxx.next', 'xxx@xxx.com']
+MAIL_SERVER = 'localhost'
+MAIL_PORT = 25
+MAIL_DEFAULT_SENDER = 'xxx@xxx.xxx.fr'
+
+# Testing
+TESTING = False

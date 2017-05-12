@@ -1,0 +1,6 @@
+requests
+Flask
+flask-cors
+git+https://github.com/randomchars/pushbullet.py.git@06b6c572edb0ef5632e6189749cb4780451438b8
+dataset
+stuf

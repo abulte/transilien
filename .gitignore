@@ -1,0 +1,7 @@
+*.log
+logs
+*.pyc
+pyenv*
+trains.json
+*.db
+settings.py
